@@ -1,0 +1,148 @@
+.app {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #21093A;
+}
+
+.loan-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 2px 12px rgba(33, 9, 58, 0.1);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="text"] {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 17px;
+  background: #faf9fb;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #21093A;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #21093A;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #888;
+}
+
+button {
+  padding: 12px;
+  background: #21093A;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #3a1260;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: #c0392b;
+  font-size: 14px;
+}
+
+.result {
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 12px rgba(33, 9, 58, 0.1);
+  border-left: 4px solid;
+}
+
+.result.positive {
+  border-color: #22c55e;
+}
+
+.result.negative {
+  border-color: #c0392b;
+}
+
+.result h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.result.positive h2 {
+  color: #16a34a;
+}
+
+.result.negative h2 {
+  color: #c0392b;
+}
+
+.result p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.result-details {
+  display: flex;
+  gap: 16px;
+}
+
+.detail {
+  flex: 1;
+  background: #f0eef4;
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detail span {
+  font-size: 13px;
+  color: #888;
+}
+
+.detail strong {
+  font-size: 20px;
+  color: #21093A;
+}
